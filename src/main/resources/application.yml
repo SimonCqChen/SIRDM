@@ -1,0 +1,11 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://202.120.40.28:13306/sirdm_ccq
+      username: usersirdm
+      password: ccq123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
