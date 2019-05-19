@@ -44,6 +44,14 @@ response
      "password": "111111",
      "email": "111@222",
      "auth": 1
+     "_links": {
+               "self": {
+                 "href": "http://218.193.191.67:8880/user/1"
+               },
+               "user": {
+                 "href": "http://218.193.191.67:8880/user/1"
+               }
+             }
    }
 ```
 
@@ -66,6 +74,14 @@ response
     "password": "111111",
     "email": "111@22",
     "auth": 0
+    "_links": {
+              "self": {
+                "href": "http://218.193.191.67:8880/user/6"
+              },
+              "user": {
+                "href": "http://218.193.191.67:8880/user/6"
+              }
+            }
 }
 ```
 
@@ -88,6 +104,14 @@ response
     "password": "111111",
     "email": "111@22",
     "auth": 0
+    "_links": {
+              "self": {
+                "href": "http://218.193.191.67:8880/user/6"
+              },
+              "user": {
+                "href": "http://218.193.191.67:8880/user/6"
+              }
+            }
 }
 ```
 
