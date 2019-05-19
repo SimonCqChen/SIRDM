@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 @Table(name="tweet")
 public class Tweet {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
 
     @Column(name = "tweet_id")
     private int tweetId;
