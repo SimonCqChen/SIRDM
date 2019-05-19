@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Repository
-@Table(name="User")
+@Table(name="user")
 @Qualifier("UserRepository")
 @RepositoryRestResource(path="user")
 public interface UserRepository extends JpaRepository<User, Integer> {
