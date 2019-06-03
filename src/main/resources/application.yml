@@ -9,3 +9,21 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+management:
+    security:
+# 仅限于 开发环境可对security进行关闭。
+        enabled: false
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+                step: 1m
+                descriptions: true
+    web:
+        server:
+            auto-time-requests: true
+    endpoints:
+        web:
+            exposure:
+                include: health,info,env,prometheus,metrics,httptrace,threaddump,heapdump
