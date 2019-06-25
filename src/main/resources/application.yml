@@ -1,0 +1,31 @@
+#spring:
+#  datasource:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      url: jdbc:mysql://202.120.40.28:3306/sirdm_ccq
+#      username: usersirdm
+#      password: ccq123456
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+server:
+    port: 8081
+
+management:
+    security:
+# 仅限于 开发环境可对security进行关闭。
+        enabled: false
+    metrics:
+        export:
+            prometheus:
+                enabled: true
+                step: 1m
+                descriptions: true
+    web:
+        server:
+            auto-time-requests: true
+    endpoints:
+        web:
+            exposure:
+                include: health,info,env,prometheus,metrics,httptrace,threaddump,heapdump
