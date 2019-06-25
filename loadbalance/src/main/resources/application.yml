@@ -1,0 +1,9 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: Ribbon-Consumer
+#providers这个是自己命名的，ribbon,listOfServer这两个是规定的
+providers:
+  ribbon:
+    listOfServers: localhost:8080,localhost:8081
