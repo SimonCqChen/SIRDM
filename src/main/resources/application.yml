@@ -1,9 +1,12 @@
+server:
+    port: 8080
+
 spring:
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://202.120.40.28:3306/sirdm_ccq
-      username: usersirdm
-      password: ccq123456
+      url: jdbc:mysql://10.44.0.5:3306/sirdm_ccq
+      username: root
+      password: root
 
   jpa:
     hibernate:
